@@ -1,0 +1,33 @@
+﻿# Revature Training
+
+This repository contains my Revature training assignments and Java practice exercises.
+
+## Week 2 - Java Fundamentals
+
+This week's assignments cover Java fundamentals, including:
+
+- Operators
+- Control flow
+- If-else and else-if statements
+- Loops
+- Classes and objects
+- Basic calculator operations
+
+## Files
+
+- `Calculator.java` - Performs basic arithmetic calculations using control flow.
+- `ControlFlow.java` - Demonstrates if-else and else-if statements for student grades.
+- `LoopChallenge.java` - Demonstrates Java loops.
+- `Operator.java` - Demonstrates arithmetic, comparison, and logical operators.
+- `Person.java` - Demonstrates basic classes and objects.
+
+## Technologies
+
+- Java
+- IntelliJ IDEA
+- Git
+- GitHub
+
+## Author
+
+Bereket Dress
