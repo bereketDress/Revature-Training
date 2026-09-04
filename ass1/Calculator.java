@@ -1,39 +1,37 @@
 package rev.ass1;
 
+import java.util.Scanner;
+
 public class Calculator {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number 1");
+        double num1=sc.nextInt();
+        System.out.println("enter a number 2");
+        double num2=sc.nextInt();
 
-        double num1 = 7;
-        double num2 = 3;
-        char operator = '+';
-
-        String again = "y";
-
-        while (again.equals("y")) {
-
-            if (operator == '+') {
-                System.out.println("Result: " + (num1 + num2));
-
-            } else if (operator == '-') {
-                System.out.println("Result: " + (num1 - num2));
-
-            } else if (operator == '*') {
-                System.out.println("Result: " + (num1 * num2));
-
-            } else if (operator == '/') {
-
+        System.out.println("enter either (+,-,*,/): ");
+        char ch = sc.next().charAt(0);
+        double result = 0;
+        switch (ch) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
                 if (num2 == 0) {
-                    System.out.println("Cannot divide by zero.");
-                } else {
-                    System.out.println("Result: " + (num1 / num2));
+                    System.out.println("invalid number");
                 }
-
-            }
-
-            again = "n";
+                result = num1 / num2;
+                break;
         }
+        System.out.println(result);
 
-        System.out.println("Thank you for using the calculator");
     }
 }
