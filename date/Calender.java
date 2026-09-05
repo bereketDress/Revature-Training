@@ -15,6 +15,9 @@ public class Calender {
     public Year currentYear() {
         return Year.now();
     }
+    public Month currentMonth() {
+        return Month.of(currentYear().getValue());
+    }
 
     public LocalDate currentDateOfMonth() {
         return LocalDate.now();
